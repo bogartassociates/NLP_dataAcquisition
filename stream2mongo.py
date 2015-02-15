@@ -32,7 +32,6 @@ class CustomStreamListener(tweepy.StreamListener):
     def on_timeout(self):
         return True # Don't kill the stream
 
-
 sapi = tweepy.streaming.Stream(auth, CustomStreamListener(api))
 
 #Middle East (Levant/Arabian Peninsula)
